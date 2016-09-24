@@ -1,0 +1,38 @@
+{
+  "name": "felixarntz/attachment-taxonomies-feature",
+  "description": "Feature plugin to improve attachment taxonomy support in WordPress.",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "feature",
+    "attachment",
+    "media",
+    "taxonomy",
+    "categories",
+    "tags"
+  ],
+  "homepage": "https://github.com/felixarntz/attachment-taxonomies-feature",
+  "support": {
+    "email": "felix-arntz@leaves-and-love.net",
+    "issues": "https://github.com/felixarntz/attachment-taxonomies-feature/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "dev-master",
+    "phpmd/phpmd": "*",
+    "wp-coding-standards/wpcs": "*",
+    "sebastian/phpcpd": "*"
+  },
+  "scripts":     {
+    "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs",
+    "post-update-cmd":  "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+  }
+}
