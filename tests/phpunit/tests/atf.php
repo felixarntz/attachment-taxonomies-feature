@@ -7,7 +7,7 @@
 class Tests_Attachment_Taxonomies_Feature extends WP_UnitTestCase {
 
 	/* Real tests would be great! */
-	public function random_test_test() {
+	public function test_random() {
 		$value = true;
 
 		$this->assertTrue( $value );
