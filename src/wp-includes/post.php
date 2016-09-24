@@ -16,7 +16,7 @@ function atf_save_ajax_attachment_taxonomies( $attachment_id ) {
 		return;
 	}
 
-	if ( ! isset( $_REQUEST['changes'] ) ) {
+	if ( empty( $_REQUEST['changes'] ) ) {
 		return;
 	}
 
